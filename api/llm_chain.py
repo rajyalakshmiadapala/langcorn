@@ -18,3 +18,4 @@ chain = LLMChain(llm=llm, prompt=prompt)
 if __name__ == "__main__":
     # Run the chain only specifying the input variable.
     print(chain.run("colorful socks"))
+    

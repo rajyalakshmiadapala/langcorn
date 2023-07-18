@@ -18,6 +18,7 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
+
 llm = OpenAI(temperature=0)
 memory = ConversationBufferMemory(return_messages=True)
 conversation = ConversationChain(memory=memory, prompt=prompt, llm=llm)
